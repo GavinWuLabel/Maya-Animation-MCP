@@ -1,0 +1,65 @@
+{
+  "checks": [
+    {
+      "name": "MCP initialize",
+      "passed": true
+    },
+    {
+      "name": "get_status succeeds",
+      "passed": true
+    },
+    {
+      "name": "bridge 0.2.0 and isolated process",
+      "passed": true
+    },
+    {
+      "name": "background main-thread scheduler",
+      "passed": true
+    },
+    {
+      "name": "custom Unicode/space output root",
+      "passed": true
+    },
+    {
+      "name": "trusted Python disabled by default",
+      "passed": true
+    },
+    {
+      "name": "disabled Python rejected before execution",
+      "passed": true
+    },
+    {
+      "name": "fresh isolated scene readable",
+      "passed": true
+    }
+  ],
+  "passed": 8,
+  "status": {
+    "protocol": 1,
+    "bridge_version": "0.2.0",
+    "maya_version": "2022",
+    "batch": true,
+    "python_version": "3.7.7",
+    "pid": 128720,
+    "scene": "",
+    "allow_python": false,
+    "output_root": "E:\\CreationData\\119小煤球动作\\工作文件\\MayaMCP_归档_20261028\\maya-animation-mcp-0.2.0\\runtime\\package smoke\\输出",
+    "scheduler": "standalone_queue",
+    "methods": [
+      "capture_frame",
+      "create_animation_layer",
+      "discover_rig",
+      "execute_python",
+      "get_animation_curves",
+      "get_pose",
+      "get_scene_info",
+      "get_status",
+      "inspect_nodes",
+      "playblast",
+      "save_scene_copy",
+      "set_current_time",
+      "set_keyframes"
+    ]
+  },
+  "scope": "Separate default-disabled background launcher with custom Unicode and space paths; no production connection."
+}

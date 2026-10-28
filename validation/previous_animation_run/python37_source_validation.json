@@ -1,0 +1,22 @@
+{
+  "python": "3.7.7 (tags/v3.7.7:d7c567b08f, Mar 10 2020, 10:41:24) [MSC v.1900 64 bit (AMD64)]",
+  "mayapy_initialized": false,
+  "source_checks": [
+    {
+      "file": "D:\\G119\\maya-animation-mcp\\maya_side\\__init__.py",
+      "syntax": "pass"
+    },
+    {
+      "file": "D:\\G119\\maya-animation-mcp\\maya_side\\maya_bridge.py",
+      "syntax": "pass"
+    },
+    {
+      "file": "D:\\G119\\maya-animation-mcp\\maya_side\\standalone_service.py",
+      "syntax": "pass"
+    },
+    {
+      "file": "D:\\G119\\maya-animation-mcp\\maya_side\\start_in_maya.py",
+      "syntax": "pass"
+    }
+  ]
+}

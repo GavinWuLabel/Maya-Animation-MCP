@@ -1,9 +1,0 @@
-{
-  "clean_ZIP_extraction": true,
-  "path_contains_spaces_and_Unicode": true,
-  "MCP_stdio_initialize": true,
-  "tools": 13,
-  "execute_python_undo_chunk_schema_present": true,
-  "configure_generated_three_local_files": true,
-  "Maya_session_connected_or_mutated": false
-}
