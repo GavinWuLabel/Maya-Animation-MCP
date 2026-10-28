@@ -1,0 +1,214 @@
+{
+  "checks": [
+    {
+      "name": "real MCP SDK initialize",
+      "pass_": true,
+      "detail": "2025-11-25"
+    },
+    {
+      "name": "13 registered tools",
+      "pass_": true,
+      "detail": [
+        "get_status",
+        "get_scene_info",
+        "discover_rig",
+        "inspect_nodes",
+        "get_pose",
+        "create_animation_layer",
+        "set_keyframes",
+        "get_animation_curves",
+        "set_current_time",
+        "save_scene_copy",
+        "playblast",
+        "capture_frame",
+        "execute_python"
+      ]
+    },
+    {
+      "name": "same current frame get_pose without frame",
+      "pass_": true,
+      "detail": {
+        "frame": 2.5,
+        "nodes": [
+          {
+            "node": "|MCP_INTEGRATION_CTRL",
+            "attributes": {
+              "rotateX": 0.0,
+              "rotateY": 0.0,
+              "rotateZ": 0.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "translateX": 9.0,
+              "translateY": 0.0,
+              "translateZ": 0.0,
+              "visibility": true
+            },
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              9.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "execute_python expected PYTHON_ERROR",
+      "pass_": true,
+      "detail": "Error executing tool execute_python: PYTHON_ERROR: ValueError: rollback fixture"
+    },
+    {
+      "name": "execute_python exception rolls back its edit",
+      "pass_": true,
+      "detail": {
+        "frame": 2.5,
+        "nodes": [
+          {
+            "node": "|MCP_INTEGRATION_CTRL",
+            "attributes": {
+              "rotateX": 0.0,
+              "rotateY": 0.0,
+              "rotateZ": 0.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "translateX": 9.0,
+              "translateY": 0.0,
+              "translateZ": 0.0,
+              "visibility": true
+            },
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              9.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "clean dirty flag remains false after copy",
+      "pass_": true,
+      "detail": null
+    }
+  ],
+  "calls": [
+    {
+      "tool": "set_current_time",
+      "args": {
+        "frame": 2.5
+      },
+      "result": "{\n  \"frame\": 2.5\n}",
+      "isError": false
+    },
+    {
+      "tool": "set_keyframes",
+      "args": {
+        "keys": [
+          {
+            "node": "|MCP_INTEGRATION_CTRL",
+            "attribute": "translateX",
+            "time": 2.5,
+            "value": 9
+          }
+        ]
+      },
+      "result": "{\n  \"key_count\": 1,\n  \"layer\": null,\n  \"time_restored\": 2.5\n}",
+      "isError": false
+    },
+    {
+      "tool": "get_pose",
+      "args": {
+        "nodes": [
+          "|MCP_INTEGRATION_CTRL"
+        ]
+      },
+      "result": "{\n  \"frame\": 2.5,\n  \"nodes\": [\n    {\n      \"node\": \"|MCP_INTEGRATION_CTRL\",\n      \"attributes\": {\n        \"rotateX\": 0.0,\n        \"rotateY\": 0.0,\n        \"rotateZ\": 0.0,\n        \"scaleX\": 1.0,\n        \"scaleY\": 1.0,\n        \"scaleZ\": 1.0,\n        \"translateX\": 9.0,\n        \"translateY\": 0.0,\n        \"translateZ\": 0.0,\n        \"visibility\": true\n      },\n      \"world_matrix\": [\n        1.0,\n        0.0,\n        0.0,\n        0.0,\n        0.0,\n        1.0,\n        0.0,\n        0.0,\n        0.0,\n        0.0,\n        1.0,\n        0.0,\n        9.0,\n        0.0,\n        0.0,\n        1.0\n      ]\n    }\n  ]\n}",
+      "isError": false
+    },
+    {
+      "tool": "execute_python",
+      "args": {
+        "code": "cmds.setAttr(\"MCP_INTEGRATION_CTRL.ty\",7)\nraise ValueError(\"rollback fixture\")"
+      },
+      "result": "Error executing tool execute_python: PYTHON_ERROR: ValueError: rollback fixture",
+      "isError": true
+    },
+    {
+      "tool": "get_pose",
+      "args": {
+        "nodes": [
+          "|MCP_INTEGRATION_CTRL"
+        ]
+      },
+      "result": "{\n  \"frame\": 2.5,\n  \"nodes\": [\n    {\n      \"node\": \"|MCP_INTEGRATION_CTRL\",\n      \"attributes\": {\n        \"rotateX\": 0.0,\n        \"rotateY\": 0.0,\n        \"rotateZ\": 0.0,\n        \"scaleX\": 1.0,\n        \"scaleY\": 1.0,\n        \"scaleZ\": 1.0,\n        \"translateX\": 9.0,\n        \"translateY\": 0.0,\n        \"translateZ\": 0.0,\n        \"visibility\": true\n      },\n      \"world_matrix\": [\n        1.0,\n        0.0,\n        0.0,\n        0.0,\n        0.0,\n        1.0,\n        0.0,\n        0.0,\n        0.0,\n        0.0,\n        1.0,\n        0.0,\n        9.0,\n        0.0,\n        0.0,\n        1.0\n      ]\n    }\n  ]\n}",
+      "isError": false
+    },
+    {
+      "tool": "execute_python",
+      "args": {
+        "code": "cmds.file(modified=False)\nresult=True",
+        "undo_chunk": false
+      },
+      "result": "{\n  \"stdout\": \"\",\n  \"stderr\": \"\",\n  \"result\": true,\n  \"warning\": \"Trusted Python, not a sandbox. Undo cannot reverse filesystem or other external side effects.\"\n}",
+      "isError": false
+    },
+    {
+      "tool": "get_scene_info",
+      "args": null,
+      "result": "{\n  \"scene\": \"E:/CreationData/119小煤球动作/工作文件/Maya_六动作_20261028/mcp_validation/native_integration_20261028/verified_fixed_scene.ma\",\n  \"modified\": false,\n  \"time\": 2.5,\n  \"time_unit\": \"ntsc\",\n  \"linear_unit\": \"cm\",\n  \"up_axis\": \"y\",\n  \"playback\": {\n    \"start\": 0.0,\n    \"end\": 150.0,\n    \"animation_start\": 0.0,\n    \"animation_end\": 250.0\n  },\n  \"selection\": [],\n  \"namespaces\": [\n    \"UI\",\n    \"shared\"\n  ],\n  \"references\": [],\n  \"animation_layers\": []\n}",
+      "isError": false
+    },
+    {
+      "tool": "save_scene_copy",
+      "args": {
+        "path": "E:\\CreationData\\119小煤球动作\\工作文件\\Maya_六动作_20261028\\mcp_validation\\native_integration_20261028\\clean_state_fixed_copy.ma"
+      },
+      "result": "{\n  \"path\": \"E:\\\\CreationData\\\\119小煤球动作\\\\工作文件\\\\Maya_六动作_20261028\\\\mcp_validation\\\\native_integration_20261028\\\\clean_state_fixed_copy.ma\",\n  \"original_scene\": \"E:/CreationData/119小煤球动作/工作文件/Maya_六动作_20261028/mcp_validation/native_integration_20261028/verified_fixed_scene.ma\",\n  \"original_modified\": false,\n  \"mode\": \"export_all_preserving_references\"\n}",
+      "isError": false
+    },
+    {
+      "tool": "get_scene_info",
+      "args": null,
+      "result": "{\n  \"scene\": \"E:/CreationData/119小煤球动作/工作文件/Maya_六动作_20261028/mcp_validation/native_integration_20261028/verified_fixed_scene.ma\",\n  \"modified\": false,\n  \"time\": 2.5,\n  \"time_unit\": \"ntsc\",\n  \"linear_unit\": \"cm\",\n  \"up_axis\": \"y\",\n  \"playback\": {\n    \"start\": 0.0,\n    \"end\": 150.0,\n    \"animation_start\": 0.0,\n    \"animation_end\": 250.0\n  },\n  \"selection\": [],\n  \"namespaces\": [\n    \"UI\",\n    \"shared\"\n  ],\n  \"references\": [],\n  \"animation_layers\": []\n}",
+      "isError": false
+    }
+  ],
+  "tools": [
+    "execute_python",
+    "get_pose",
+    "get_scene_info",
+    "save_scene_copy",
+    "set_current_time",
+    "set_keyframes"
+  ],
+  "passed": 6,
+  "failed": 0
+}

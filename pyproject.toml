@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maya-animation-mcp"
+version = "0.2.0"
+description = "Local MCP tools for animating existing Maya character rigs"
+requires-python = ">=3.10"
+dependencies = ["mcp==1.30.0"]
+
+[project.scripts]
+maya-animation-mcp = "maya_animation_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

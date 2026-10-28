@@ -1,0 +1,8 @@
+{
+  "passed": 2,
+  "checks": [
+    "missing config is created; repeat registration preserves configured entry",
+    "existing unrelated config preserved verbatim with exact backup"
+  ],
+  "real_user_settings_touched": false
+}

@@ -1,0 +1,14 @@
+.venv/
+.uv-cache/
+__pycache__/
+*.egg-info/
+runtime/
+output/
+evidence/
+validation/local/
+codex-mcp.toml
+codex-mcp-background.toml
+START_MAYA_BRIDGE.mel
+*.ma
+*.mb
+*.png

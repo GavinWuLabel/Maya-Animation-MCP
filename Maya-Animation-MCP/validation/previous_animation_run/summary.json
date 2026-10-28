@@ -1,0 +1,54 @@
+{
+  "native_main_passed": 28,
+  "native_main_failed": 0,
+  "supplement_passed": 6,
+  "supplement_failed": 0,
+  "targeted_offline_tests_passed": 8,
+  "all_tools": [
+    "capture_frame",
+    "create_animation_layer",
+    "discover_rig",
+    "execute_python",
+    "get_animation_curves",
+    "get_pose",
+    "get_scene_info",
+    "get_status",
+    "inspect_nodes",
+    "playblast",
+    "save_scene_copy",
+    "set_current_time",
+    "set_keyframes"
+  ],
+  "processes_owned": [
+    81508,
+    100664,
+    83216
+  ],
+  "production_process_not_connected": 83368,
+  "gui_tests": "This isolated batch test asserted GUI_REQUIRED for capture_frame/playblast; it makes no conclusion about separate GUI validation.",
+  "software_render": "NOT_RUN; not required for bridge semantics test",
+  "limits": [
+    "No renderer image quality tested",
+    "No automatic production-service hot reload",
+    "Queued timeout and malformed protocol tests remain prior offline evidence, not newly fault-injected into native process"
+  ],
+  "source_files_sha256": {
+    "D:\\G119\\maya-animation-mcp\\maya_side\\maya_bridge.py": "6585212b1f0d1bfa4df8d70eafd70fa36cb47dfc8e0a65c9cd682cb6a9f5a8b5",
+    "D:\\G119\\maya-animation-mcp\\src\\maya_animation_mcp\\server.py": "953a18246a8f3be5fa4f607b031dead73a35759f48bf365504d41417594c00cb",
+    "D:\\G119\\maya-animation-mcp\\tests\\test_python_transaction_mode.py": "84819d7b0e2f2fbf6ffe37c3b1f9d2b99d23516c2cf64d7077f83d1c6924949b"
+  },
+  "unique_native_assertions": 32,
+  "duplicate_handshake_assertions": 2,
+  "archive": {
+    "path": "diagnostic_history.zip",
+    "verified_payload_entries": 30,
+    "removed_original_files": 27,
+    "sha256": "96aeca028578c265092acf03dbb85447a1c76031218eee658f049081cd4ba986"
+  },
+  "test_process_closed": true,
+  "final_offline_tests_passed": 53,
+  "final_offline_tests_failed": 0,
+  "final_offline_log": "../final_offline_suite.log",
+  "python37_source_files_passed": 4,
+  "python37_report": "../python37_source_validation.json"
+}

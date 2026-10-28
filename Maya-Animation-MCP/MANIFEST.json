@@ -1,0 +1,197 @@
+{
+  "release": "0.2.0",
+  "created": "2026-10-28T20:30:45",
+  "entries": [
+    {
+      "path": ".gitignore",
+      "bytes": 181,
+      "sha256": "b39442a7fe9fd29f378e29f7759fe76d6c82b813395b7b27d1a57539e4cc8fd3"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1018,
+      "sha256": "f8d13f9a934f1fbfe26b5d3717a0421586b361fa3c2e7c1a3a76d8069ee9baed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7402,
+      "sha256": "ce887c5aa3a3f9f37003c77eee0b5ef478b9c1854426cdc2661691b88d34a20d"
+    },
+    {
+      "path": "maya_side/__init__.py",
+      "bytes": 127,
+      "sha256": "a95ff2a675c90f2e1ccf8ad9a977b1d2da976652669c6a15796c5f47166d75a6"
+    },
+    {
+      "path": "maya_side/maya_bridge.py",
+      "bytes": 34555,
+      "sha256": "1ee59f0852364733b9699064a7be9ecb4dec2960403af8d132d01d73fc66dcce"
+    },
+    {
+      "path": "maya_side/standalone_service.py",
+      "bytes": 4698,
+      "sha256": "864b4b7ee75080d0b5935938dc002ba62425de337899584d29cace7ecd822d96"
+    },
+    {
+      "path": "maya_side/start_in_maya.py",
+      "bytes": 772,
+      "sha256": "88a80291fe3a6db2681599d8dfc4da3bcc7efb08893d52e84dd78078cbacb120"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 413,
+      "sha256": "5ec92b64ac47ec2fa8d8f33fb6b55c0de532198120313f95c22af95529e41638"
+    },
+    {
+      "path": "scripts/configure.py",
+      "bytes": 1226,
+      "sha256": "ed3f7d206c1323e41e302fddb15326b06af56f7353f91b5d91334a8794e76e00"
+    },
+    {
+      "path": "scripts/launch_test_maya.ps1",
+      "bytes": 1170,
+      "sha256": "6f30608600335814a59f606143b6ab3455dbfa070e4f69358c6648b7fe5130a5"
+    },
+    {
+      "path": "scripts/maya_executable.ps1",
+      "bytes": 1176,
+      "sha256": "68de5c1549a09ba5455805ff7e7d12c6e08159041de375f23328b1b57728d01f"
+    },
+    {
+      "path": "scripts/register_codex.py",
+      "bytes": 1779,
+      "sha256": "a8ec807fc266e6b8514b69ff6d5d2a0692851b3c36dd61d12e0acd0394b63857"
+    },
+    {
+      "path": "scripts/run_native_test.ps1",
+      "bytes": 1523,
+      "sha256": "32f09a5d0e50eb95e0c9321956329fcf485376fc44cb42a75251503f7834200d"
+    },
+    {
+      "path": "scripts/run_server.py",
+      "bytes": 234,
+      "sha256": "7292feca0aee85d2118e0de487c5b34236467d93b26af914f5955b0668c61589"
+    },
+    {
+      "path": "scripts/setup.ps1",
+      "bytes": 642,
+      "sha256": "47ceef26a115a97cfe70db3dea26a09976f3a137e79b061a1db7175dc030a62f"
+    },
+    {
+      "path": "scripts/start_background.ps1",
+      "bytes": 1634,
+      "sha256": "495cb863e3108cd3f9519b075b0bc8f21ee90b40c1553d1d0c57e02f1ec05ed3"
+    },
+    {
+      "path": "src/maya_animation_mcp/__init__.py",
+      "bytes": 80,
+      "sha256": "67cd524f8f368f5b4b9c97d1ce03d5f9aacd6c9807bd6a253b895340e92a35d7"
+    },
+    {
+      "path": "src/maya_animation_mcp/bridge_client.py",
+      "bytes": 4015,
+      "sha256": "05cef1bbb42631c1f45cf23a5b825c22041fe237da6934d4198a5ac1436e90f9"
+    },
+    {
+      "path": "src/maya_animation_mcp/server.py",
+      "bytes": 5684,
+      "sha256": "953a18246a8f3be5fa4f607b031dead73a35759f48bf365504d41417594c00cb"
+    },
+    {
+      "path": "tests/integration_mcp.py",
+      "bytes": 5943,
+      "sha256": "8b9e28f70af7be5127ad6c965c051083d25292a2ad8d46e1a8ef7c7b48b1f8c6"
+    },
+    {
+      "path": "tests/live_readonly_smoke.py",
+      "bytes": 3792,
+      "sha256": "e6a931493b5c2fba1977c589e535067e699f0f924713720d36d4fbdc9541d01c"
+    },
+    {
+      "path": "tests/maya_fixture.py",
+      "bytes": 2591,
+      "sha256": "18e04f160b9ab4623fcee5f91c7898ba310f6d43e4eedf71c98e979dd47591a9"
+    },
+    {
+      "path": "tests/test_offline_revision.py",
+      "bytes": 20423,
+      "sha256": "d789428159e7eefc5d87cbd1ebe1de0069979c38b9853ecfdf6d62c50060467b"
+    },
+    {
+      "path": "tests/test_package_portability.py",
+      "bytes": 2139,
+      "sha256": "72e6d7668b7faf0c17d4c3b47abe8b152715d95bfdebe1fd7f8d8955e0c17e55"
+    },
+    {
+      "path": "tests/test_python_transaction_mode.py",
+      "bytes": 3337,
+      "sha256": "84819d7b0e2f2fbf6ffe37c3b1f9d2b99d23516c2cf64d7077f83d1c6924949b"
+    },
+    {
+      "path": "tests/test_standalone_offline.py",
+      "bytes": 3132,
+      "sha256": "e1bd5e5d758f45d24f27c87a2bf91e2b8ce43c3129abdbae90f21cc316b08b99"
+    },
+    {
+      "path": "validation/background_0.2.0.json",
+      "bytes": 1606,
+      "sha256": "70bca883c796b320bd36d52190551aabcbc1fb48e0e6a316925647b066c94105"
+    },
+    {
+      "path": "validation/configuration_0.2.0.json",
+      "bytes": 232,
+      "sha256": "11fc1b49e909b73f482ffd134877448ab4ed26886e22a6557362aab657ab7aaa"
+    },
+    {
+      "path": "validation/extraction_0.2.0.json",
+      "bytes": 280,
+      "sha256": "d9033a5fbe228fdd130e68bb447d0ca77462a4fe2ff0dba3c04c2fcdd0001efc"
+    },
+    {
+      "path": "validation/native_0.2.0.json",
+      "bytes": 8253,
+      "sha256": "d87a34c451de1b950a1d6814eb34add7632332c943ec4125a50bac3e3b3b09c1"
+    },
+    {
+      "path": "validation/offline_0.2.0.log",
+      "bytes": 5576,
+      "sha256": "c82dea53deed5234e2aa395aaa24c1b60267db8261d83b2a236b30d2be2bf633"
+    },
+    {
+      "path": "validation/previous_animation_run/final_offline_suite.log",
+      "bytes": 4701,
+      "sha256": "6543e4c205d8bf1b012e5b996d1cffc7751c633cdf95a51f4857b3ee645765f9"
+    },
+    {
+      "path": "validation/previous_animation_run/python37_source_validation.json",
+      "bytes": 618,
+      "sha256": "1803fd3ebbaa8c79f98e22e7d1f0d4bb6d4076891577b6fb43f7d9026bfd6df3"
+    },
+    {
+      "path": "validation/previous_animation_run/summary.json",
+      "bytes": 2044,
+      "sha256": "93c8cd3adb1081c20872feb2dcca0377f83fa6647b25d30d65f16805cf2dbc72"
+    },
+    {
+      "path": "validation/previous_animation_run/supplement_fixed_report.json",
+      "bytes": 8037,
+      "sha256": "52cfc69b12a0b55878be7b2fd45c34ab0528b8d28271bc09e7821c5eb59c5732"
+    },
+    {
+      "path": "validation/previous_animation_run/verified_report.json",
+      "bytes": 454288,
+      "sha256": "7add923510f549e6b6127b21c1914dd0ef4899f206b8c994e486e5b13f60da9a"
+    },
+    {
+      "path": "validation/python37_0.2.0.json",
+      "bytes": 269,
+      "sha256": "edbfbfceb24d50cc24d78708e3160b5e3b738b603b3a97d3009d530e1052d211"
+    },
+    {
+      "path": "validation/summary.json",
+      "bytes": 1139,
+      "sha256": "12cdb3dc739b46387806dce540a5496548831e3c450b8995f625fad81802052c"
+    }
+  ],
+  "note": "MANIFEST.json is not self-hashed. Live connection files, environments, caches and character assets are excluded."
+}
